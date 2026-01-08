@@ -3,7 +3,7 @@ import streamlit as st
 # Configuración de página
 st.set_page_config(page_title="Feliz 2026", page_icon="🥂")
 
-# Importar una fuente elegante de Google Fonts para el toque navideño
+# Importar tipografía navideña y definir estilos
 st.markdown("""
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,44 +23,37 @@ st.markdown("""
     }
     .titulo-navideno {
         font-family: 'Great Vibes', cursive;
-        color: #FFFFFF !important; /* Blanco Puro */
-        font-size: 85px !important;
+        color: #FFFFFF !important;
+        font-size: 80px !important;
         text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-weight: 100;
     }
-    .cita {
+    .mensaje-exito {
         color: #FFD700;
-        font-style: italic;
-        font-size: 22px;
+        font-size: 28px;
         margin-top: 25px;
         font-family: 'Arial', sans-serif;
-    }
-    .nombre {
-        color: #FFFFFF;
         font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# Animaciones
+# Animaciones de celebración
 st.balloons()
 st.snow()
 
-# Contenido
+# Contenido principal
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
 # Título en blanco y cursivo
 st.markdown('<h1 class="titulo-navideno">¡Feliz Año 2026!</h1>', unsafe_allow_html=True)
 
-# Imagen de DiCaprio (El Gran Gatsby)
-st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Iv5lqKwKsZ2g/giphy.gif", use_container_width=True)
+# Tu foto cargada desde el repositorio
+st.image("mifoto.png", use_container_width=True)
 
-st.markdown("""
-    <p class="cita">"El único límite es tu mente. ¡A triunfar este año!"</p>
-    <p class="nombre">- LEONARDO DICAPRIO -</p>
-    """, unsafe_allow_html=True)
+# Tu frase personalizada
+st.markdown('<p class="mensaje-exito">"Este año te deseo el mayor de los éxitos"</p>', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
