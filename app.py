@@ -1,9 +1,9 @@
 import streamlit as st
 
-# Configuración de página
-st.set_page_config(page_title="Feliz 2026", page_icon="🥂")
+# Configuración de la pestaña con tu nuevo nombre
+st.set_page_config(page_title="Mensaje Toro 2026", page_icon="🐂")
 
-# Importar tipografía navideña y definir estilos
+# Estilos y Tipografía Navideña
 st.markdown("""
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,25 +35,24 @@ st.markdown("""
         margin-top: 25px;
         font-family: 'Arial', sans-serif;
         font-weight: bold;
-        letter-spacing: 1px;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# Animaciones de celebración
+# Animaciones
 st.balloons()
 st.snow()
 
-# Contenido principal
+# Contenido
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
-# Título en blanco y cursivo
+# Título Blanco
 st.markdown('<h1 class="titulo-navideno">¡Feliz Año 2026!</h1>', unsafe_allow_html=True)
 
-# Tu foto cargada desde el repositorio
+# Tu foto (mifoto.png)
 st.image("mifoto.png", use_container_width=True)
 
-# Tu frase personalizada
+# Tu frase
 st.markdown('<p class="mensaje-exito">"Este año te deseo el mayor de los éxitos"</p>', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
