@@ -1,27 +1,45 @@
 import streamlit as st
 
-# Configuración de la pestaña
 st.set_page_config(page_title="Feliz 2026", page_icon="🎊")
 
-# Lanzar globos automáticamente
+# Efectos especiales de globos Y nieve
 st.balloons()
+st.snow()
 
-# Diseño del Cartel
 st.markdown("""
     <style>
-    .main {
+    .stApp {
         background-color: #0e1117;
     }
-    .card {
-        background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
-        padding: 60px;
+    .main-card {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        padding: 50px;
         border-radius: 30px;
+        border: 2px solid #FFD700;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+        margin-top: 50px;
+    }
+    .titulo {
+        font-family: 'Georgia', serif;
+        color: #FFD700;
+        font-size: 70px !important;
+        font-weight: bold;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        margin-bottom: 10px;
+    }
+    .deseo {
+        color: white;
+        font-size: 24px;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 2px;
     }
     </style>
-    <div class="card">
-        <h1 style="color: white; font-size: 80px; margin: 0;">🎊 ¡FELIZ AÑO! 🎊</h1>
-        <h2 style="color: white; font-size: 30px; opacity: 0.9;">Que el 2026 sea tu mejor año</h2>
+    
+    <div class="main-card">
+        <h1 class="titulo">🎊 2026 🎊</h1>
+        <p class="deseo">¡QUE TODOS TUS SUEÑOS SE HAGAN REALIDAD!</p>
+        <hr style="border-color: #FFD700;">
+        <p style="color: #FFD700; font-size: 40px;">🥂✨🚀</p>
     </div>
     """, unsafe_allow_html=True)
